@@ -1,7 +1,7 @@
 const chai = require('chai')
 const expect = chai.expect
 
-const nodePython = require('./build/Release/PyNode')
+const nodePython = require('../build/Release/PyNode')
 const { promisify } = require('util')
 
 if (process.platform === 'linux') nodePython.dlOpen('libpython3.6m.so')
